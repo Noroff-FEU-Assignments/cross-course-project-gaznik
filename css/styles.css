@@ -1,17 +1,3 @@
-/* FONT */
-h1,
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #0e4873;
-  padding-left: 50px;
-}
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  padding-left: 70px;
-  padding-right: 100px;
-}
-
 /* NAV BAR */
 header {
   background-color: #f0d296;
@@ -26,13 +12,13 @@ header {
   align-items: center;
 }
 
-nav ul {
+header nav ul {
   margin-right: 2rem;
 }
 
 .nav-icon {
   width: 30px;
-  margin: 3px;
+  margin: 1px;
 }
 .hamburger {
   width: 30px;
@@ -67,12 +53,11 @@ nav li {
 }
 .toggle:checked ~ .menu > div {
   transform: scale(1);
-  transition-duration: var(--menu-speed);
 }
 
 .toggle:checked ~ .menu > div > div {
   opacity: 1;
-  transition: opacity 0.4s ease;
+  transition: opacity ease;
 }
 
 /* DROP DOWN MENU */
@@ -82,7 +67,6 @@ nav li {
   left: 0;
   width: 100%;
   height: 100%;
-  visability: hidden;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -91,9 +75,7 @@ nav li {
 }
 
 .dropdown .menu > div {
-  background: var(--overlay-color);
-  background-color: #f0d296;
-  border-radius: 50%;
+  background-color: #0e4873;
   width: 200vw;
   height: 200vw;
   display: flex;
@@ -101,21 +83,24 @@ nav li {
   align-items: center;
   justify-content: center;
   transform: scale(0);
-  transition: all 0.4s ease;
 }
 
 .dropdown .menu > div > div {
+  padding-top: 5em;
   text-align: center;
-  max-width: 90vw;
+  max-width: 100vw;
   max-height: 100vh;
   opacity: 0;
-  transition: opacity 0.4s ease;
 }
 
 .dropdown .menu > div > div > ul > li {
+  background-color: #f0d296;
+  margin: 1em;
+  border-radius: 15px;
   list-style: none;
-  color: #fff;
+  color: #0e4873;
   font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
 }
 
@@ -148,6 +133,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .box-item .image img {
@@ -181,6 +167,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .instagram {
