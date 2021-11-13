@@ -86,41 +86,6 @@ body {
   margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  background-color: #f7f7f7;
-
- }
-  
- .game-title {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  text-align: center;
- }
-  
- .game-image {
-  padding: 10px;
-  
-  grid-column:1/2;
-  grid-row:2/3;
-  
- }
-  
- .game-text {
-  padding:
-  grid-column:
-  grid-row:
-  
- }
-  
- .cart-cta {
-  grid-column:
-  grid-row:
- margin-left:
- }
- 
-
 /* Footer */
 footer {
   background-color: #0e4873;
@@ -139,7 +104,6 @@ footer .social-media li {
 /*ALTERNATIVE SCREEN DESKTOP*/
 
 @media (min-width: 500px) {
-  
 }
 
 @media (min-width: 800px) {
@@ -148,7 +112,6 @@ footer .social-media li {
     justify-content: center;
     justify-content: space-between;
     width: 100%;
-    
   }
 
   .nav-menu div {
@@ -158,31 +121,4 @@ footer .social-media li {
   .hamburger {
     display: none;
   }
-
-  .container {
-    grid-template-columns: repeat(3, fr);
-    
-   
-  }
-   .game-title {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    text-align: center;
-  }
-   .game-image {
-    padding: 30px;
-    grid-column: 2/3;
-    grid-row: 2/4;
-  }
-   .game-text {
-    padding: 20px;
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-   .cart-cta {
-    grid-column: 3/4;
-    grid-row: 3/4;
-   margin-left: 100px;
-  }
- 
 }
