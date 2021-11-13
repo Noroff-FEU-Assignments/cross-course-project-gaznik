@@ -1,6 +1,6 @@
 /* Font */
 
-body
+body, body
 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -28,7 +28,7 @@ body {
 
 main {
   flex-grow: 1;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 .header-container {
@@ -88,7 +88,58 @@ body {
   margin: 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
 
+.signup-form, .signin-form {
+  display: flex;  
+  flex-direction: column;
+  width: 300px;
+padding: 40px;
+margin: 10% auto 10% auto;
+text-align:center;
+background-color: #fff;
+}
+
+legend {
+font-size: 2em;
+color: #0e4873;
+border-color: black;
+
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+
+}
+label {
+  font-size: 0.8em;
+  text-align:start;
+}
+
+.create-account-button, .signin-button {
+  border-radius: 50px;
+  border-width: 5;
+  border-color: #000;
+  color: #fff;
+  max-width: 150px ;
+  border-style: solid;
+  margin-left: 23%;
+  
+}
+
+.signin-button {
+  margin-top: 20%;
+  background-color: #F24B4B;
+}
+
+.create-account-button {
+  margin-top: 20%;
+  background-color: #1A7F8C;
+}
 
 /* Footer */
 footer {
@@ -124,11 +175,19 @@ footer .social-media li {
     display: none;
   }
 
-  .container .boxes {
+  form {
    
+    flex-direction: row;
+  }
+  .signin-button {
+    margin-top: 55%;
+  }
+ 
+  .create-account-button {
+    margin-top: 13px;
   }
 
- 
+
 }
 @media (min-width: 500px) and (max-width: 799px) {
   
