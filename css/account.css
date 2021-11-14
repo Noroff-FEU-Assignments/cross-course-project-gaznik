@@ -8,6 +8,8 @@ a {
   color: inherit;
 }
 
+/* Layout */
+
 body {
   background-color: #0e4873;
 }
@@ -31,6 +33,8 @@ main {
   background-color: #fff;
 }
 
+/* Header */
+
 .header-container {
   background-color: #f0d296;
   max-width: 1000px;
@@ -41,7 +45,6 @@ main {
   background-color: #f0d296;
 }
 
-/* Header */
 header section {
   background-color: #f0d296;
   display: flex;
@@ -118,7 +121,6 @@ nav li {
   appearance: none;
 }
 
-
 /* Main Page */
 
 body {
@@ -139,62 +141,47 @@ h1 {
 }
 
 .information-box {
-  
   grid-column: 1/3;
   grid-row: 1/3;
   font-size: 14px;
-  
 }
 
 .section-purchase {
-  
   grid-column: 1/3;
   grid-row: 3/4;
 }
 .section-sold {
-  
   grid-column: 1/2;
   grid-row: 5/6;
-  
 }
 
-.purchases, .sold {
+.purchases,
+.sold {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  
-  
 }
 
-.purchases, .sold, .information-box {
+.purchases,
+.sold,
+.information-box {
   border: 1px solid #0e4873;
   background-color: #fff;
   margin: 10px;
   padding: 5px;
 }
 
-
-
 .item {
-  
   width: 100px;
   height: 150px;
   margin: 1%;
-
-   
-  
 }
 
 .item img {
   width: 100%;
   object-fit: cover;
 }
-
-
-
-
-
 
 /* Footer */
 footer {
@@ -230,34 +217,22 @@ footer .social-media li {
     display: none;
   }
 
-  .container  {
+  .container {
     grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 100px;
-
+    grid-auto-rows: 100px;
   }
-    .information-box {
-  
-      
-      grid-column: 1/3;
-      grid-row: 1/5;
-    }
-    
-    .section-purchase {
-      grid-column: 3/5;
-      grid-row: 1/3;
-      
-    }
-    
-    .section-sold {
-      grid-column: 3/4;
-    grid-row: 3/6;
-    
-    }
-  
+  .information-box {
+    grid-column: 1/3;
+    grid-row: 1/5;
+  }
 
- 
-}
-@media (min-width: 500px) and (max-width: 799px) {
-  
+  .section-purchase {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+
+  .section-sold {
+    grid-column: 3/4;
+    grid-row: 3/6;
   }
 }

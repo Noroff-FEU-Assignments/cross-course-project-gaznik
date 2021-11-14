@@ -8,6 +8,8 @@ a {
   color: inherit;
 }
 
+/* Layout */
+
 body {
   background-color: #0e4873;
 }
@@ -30,7 +32,7 @@ main {
   flex-grow: 1;
   background-color: #fff;
 }
-
+/* Header */
 .header-container {
   background-color: #f0d296;
   max-width: 1000px;
@@ -41,7 +43,6 @@ main {
   background-color: #f0d296;
 }
 
-/* Header */
 header section {
   background-color: #f0d296;
   display: flex;
@@ -118,7 +119,6 @@ nav li {
   appearance: none;
 }
 
-
 /* Main Page */
 
 body {
@@ -132,52 +132,51 @@ form {
   flex-direction: column;
 }
 
-.signup-form, .signin-form {
-  display: flex;  
+.signup-form,
+.signin-form {
+  display: flex;
   flex-direction: column;
   width: 300px;
-padding: 40px;
-margin: 10% auto 10% auto;
-text-align:center;
-background-color: #fff;
+  padding: 40px;
+  margin: 10% auto 10% auto;
+  text-align: center;
+  background-color: #fff;
 }
 
 legend {
-font-size: 2em;
-color: #0e4873;
-border-color: black;
-
+  font-size: 2em;
+  color: #0e4873;
+  border-color: black;
 }
 
 input {
   padding: 10px;
   margin: 10px;
-
 }
 label {
   font-size: 0.8em;
-  text-align:start;
+  text-align: start;
 }
 
-.create-account-button, .signin-button {
+.create-account-button,
+.signin-button {
   border-radius: 50px;
   border-width: 5;
   border-color: #000;
   color: #fff;
-  max-width: 150px ;
+  max-width: 150px;
   border-style: solid;
   margin-left: 23%;
-  
 }
 
 .signin-button {
   margin-top: 20%;
-  background-color: #F24B4B;
+  background-color: #f24b4b;
 }
 
 .create-account-button {
   margin-top: 20%;
-  background-color: #1A7F8C;
+  background-color: #1a7f8c;
 }
 
 /* Footer */
@@ -215,20 +214,13 @@ footer .social-media li {
   }
 
   form {
-   
     flex-direction: row;
   }
   .signin-button {
     margin-top: 55%;
   }
- 
+
   .create-account-button {
     margin-top: 13px;
-  }
-
-
-}
-@media (min-width: 500px) and (max-width: 799px) {
-  
   }
 }
