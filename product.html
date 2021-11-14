@@ -7,9 +7,9 @@
     <link href="/css/product.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub product specific page. View details about a specific game."
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | Product</title>
   </head>
 
   <body>
@@ -26,7 +26,9 @@
                   href="#"
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li><a href="games.html">
+                <img src="/images/icons/search.png" class="search-icon" />
+              </a></li>
             </nav>
             <nav>
               <li>
@@ -52,10 +54,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -63,20 +82,27 @@
     <div class="content-wrapper">
       <div class="content-container">
         <main>
+          <h1>Assasin</h1>
           <container class="container">
-            <div class="game-title"><h1>Assasin</h1></div>
             <div class="game-image"><img src="/images/assasin.jpg" /></div>
-            <div class="game-text">
-              <p>
-                Explore a world in which you are an assassin, hired to take down
-                powerful leaders in this exciting adventure game. Full of
-                quests, stories and amazing turn based combat. Now you can also
-                play with friends in the online version. The game will be
-                updated every season with new DLC’s and expanded character
-                selection.
-              </p>
+            <div class="right-wrapper">
+              <div class="game-text">
+                <p>
+                  Explore a world in which you are an assassin, hired to take
+                  down powerful leaders in this exciting adventure game. <p>Full of
+                  quests, stories and amazing turn based combat. Now you can
+                  also play with friends in the online version. The game will be
+                  updated every season with new DLC’s and expanded character
+                  selection.</p>
+                </p>
+              </div>
+              <p class="price">100kr</p>
+              <div>
+                <a href="/cart.html"
+                  ><button class="cart-cta">Add to cart</button></a
+                >
+              </div>
             </div>
-            <div class="cart-cta"><button>Add to cart</button></div>
           </container>
         </main>
         <footer>

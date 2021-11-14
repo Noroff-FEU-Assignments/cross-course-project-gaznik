@@ -7,9 +7,9 @@
     <link href="/css/checkout.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub checkout success  page. The purchase was successful"
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | Checkout success</title>
   </head>
 
   <body>
@@ -26,7 +26,7 @@
                   href="#"
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li><a href="/games.html"><img src="/images/icons/search.png" class="search" /></li></a>
             </nav>
             <nav>
               <li>
@@ -52,10 +52,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -64,10 +81,11 @@
       <div class="content-container">
         <main>
           <container class="container">
-            <div><h1>Account details</h1></div>
-            <div>Info about account</div>
-            <div>Purchase history</div>
-            <div>Selling history</div>
+            <h1>Thank you for your purchase</h1>
+            <div class="buttons-wrapper">
+              <div><a href="account.html"><button class="account-button">Account</button></a></div>
+              <div><a href="/index.html"><button class="home-button">Home</button></a></div>
+            </div>
           </container>
         </main>
         <footer>

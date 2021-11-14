@@ -7,9 +7,9 @@
     <link href="/css/cart.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub my cart page. View the items in your cart."
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | Cart</title>
   </head>
 
   <body>
@@ -26,7 +26,11 @@
                   href="#"
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li>
+                <a href="games.html">
+                  <img src="/images/icons/search.png" class="search-icon" />
+                </a>
+              </li>
             </nav>
             <nav>
               <li>
@@ -52,10 +56,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -65,9 +86,29 @@
         <main>
           <h1>My Cart</h1>
           <container class="container">
-            <div class="item">Item info</div>
-            <div class="continue">Continue Shopping</div>
-            <div class="check-out">Check Out</div>
+            <div class="cart-box">
+              <div class="cart-item"><img src="/images/assasin.jpg" /></div>
+              <div class="title"><h2>Assasin</h2></div>
+              <div class="price"><p>Price</p></div>
+              <div class="nok1"><p>100kr</p></div>
+              <div class="underline1"></div>
+              <div class="underline2"></div>
+
+              <div class="total"><p>Total :</p></div>
+              <div class="nok2"><p>100kr</p></div>
+            </div>
+            <div class="buttons-wrapper">
+              <div>
+                <a href="/games.html"
+                  ><button class="continue">Continue Shopping</button></a
+                >
+              </div>
+              <div>
+                <a href="/checkout.html"
+                  ><button class="check-out">Check Out</button></a
+                >
+              </div>
+            </div>
           </container>
         </main>
         <footer>

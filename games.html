@@ -7,9 +7,9 @@
     <link href="/css/games.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub list of games page. List of all available games."
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | List og games</title>
   </head>
 
   <body>
@@ -26,7 +26,11 @@
                   href="#"
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li>
+                <a href="games.html">
+                  <img src="/images/icons/search.png" class="search-icon" />
+                </a>
+              </li>
             </nav>
             <nav>
               <li>
@@ -52,10 +56,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -63,15 +84,97 @@
     <div class="content-wrapper">
       <div class="content-container">
         <main>
+          <h1>Games</h1>
+          <form action="form-success.php" method="POST">
+            <input
+              type="text"
+              name="Search"
+              id="search"
+              placeholder="Looking for something...?"
+            />
+            <input class="search-button" type="submit" value="Search" />
+          </form>
           <container class="container">
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
-            <div><img src="/images/assasin.jpg" class="product" />Box 1</div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/assasin.jpg" class="product" /></a
+              >100kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/black.jpg" class="product" /></a
+              >200kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/boxer.jpg" class="product" /></a
+              >150kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/pinpong.jpg" class="product" /></a
+              >100kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/furious.jpg" class="product" /></a
+              >150kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/spacewars.jpg" class="product" /></a
+              >200kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/superduper.jpg" class="product" /></a
+              >180kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/racing.jpg" class="product" /></a
+              >250kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/assasin.jpg" class="product" /></a
+              >100kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/black.jpg" class="product" /></a
+              >200kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/boxer.jpg" class="product" /></a
+              >150kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/pinpong.jpg" class="product" /></a
+              >100kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/furious.jpg" class="product" /></a
+              >150kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/spacewars.jpg" class="product" /></a
+              >200kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/superduper.jpg" class="product" /></a
+              >180kr
+            </div>
+            <div>
+              <a href="product.html"
+                ><img src="/images/racing.jpg" class="product" /></a
+              >250kr
+            </div>
           </container>
         </main>
         <footer>

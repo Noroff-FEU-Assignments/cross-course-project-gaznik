@@ -7,9 +7,9 @@
     <link href="/css/contact.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub contact page. Social media and contact information."
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | Contact</title>
   </head>
 
   <body>
@@ -26,7 +26,11 @@
                   href="#"
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li>
+                <a href="games.html">
+                  <img src="/images/icons/search.png" class="search-icon" />
+                </a>
+              </li>
             </nav>
             <nav>
               <li>
@@ -52,10 +56,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -64,12 +85,47 @@
       <div class="content-container">
         <main>
           <container class="container">
-            <div class="box">Box 1</div>
-            <div class="box">Box 1</div>
-            <div class="box">Box 1</div>
-            <div class="box">Box 1</div>
-            <div class="box">Box 1</div>
-            <div class="box">Box 1</div>
+            <h1>Contact Us</h1>
+            <form action="form-success.php" method="POST">
+              <fieldset class="contact-form">
+                <legend>Contact form</legend>
+                <label for="name">Username</label>
+                <input
+                  type="text"
+                  name="Name"
+                  id="name"
+                  placeholder="Your username..."
+                />
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Your phone number..."
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email..."
+                />
+                <label for="Inquiry">Inquiry</label>
+                <textarea
+                  type="text"
+                  name="inquiry"
+                  id="inquiry"
+                  placeholder="Start writing your message to us here. And we will reply shortly"
+                >
+                </textarea>
+
+                <input
+                  class="contact-us-button"
+                  type="submit"
+                  value="Contact us"
+                />
+              </fieldset>
+            </form>
           </container>
         </main>
         <footer>

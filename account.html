@@ -7,9 +7,9 @@
     <link href="/css/account.css" rel="stylesheet" />
     <meta
       name="description"
-      content="GameHub home page. Buy, pre-order and sell games."
+      content="GameHub account page. Information about your account."
     />
-    <title>GameHub | Home</title>
+    <title>GameHub | Account</title>
   </head>
 
   <body>
@@ -22,11 +22,12 @@
                 <img
                   src="images/icons/Hamburger.png"
                   class="hamburger"
-                  a
-                  href="#"
+                  
                 />
               </li>
-              <li><img src="/images/icons/search.png" class="search" /></li>
+              <li><a href="games.html">
+                <img src="/images/icons/search.png" class="search-icon" />
+              </a></li>
             </nav>
             <nav>
               <li>
@@ -52,10 +53,27 @@
           </section>
 
           <nav class="nav-menu">
-            <div><a href="/games.html">Shop Games</a></div>
-            <div><a href="#">Sell Games</a></div>
-            <div><a href="/new-account.html">New Account</a></div>
-            <div><a href="/contact.html">Contact</a></div>
+            <div class="desktop-nav-menu-links">
+              <a href="/games.html">Shop Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">Sell Games</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/new-account.html">New Account</a>
+            </div>
+            <div class="desktop-nav-menu-links">
+              <a href="/contact.html">Contact</a>
+            </div>
+          </nav>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav class="dropdown-menu">
+            <ul class="dropdown-menu-links">
+              <a href="/games.html"><li>Shop Games</li></a>
+              <a href="/new-account.html"><li>Sell Games</li></a>
+              <a href="/new-account.html"><li>New Account</li></a>
+              <a href="/contact.html"><li>Contact</li></a>
+            </ul>
           </nav>
         </header>
       </div>
@@ -70,25 +88,30 @@
               <div><h2>E-mail: Lovegames@gmail.com</h2></div>
               <div><h2>Name: John Smith</h2></div>
             </div>
-
-            <div class="purchases">
+            <div class="section wrapper">
+              <section class="section-purchase">
               <h2>Purchase History</h2>
-              <div>Box</div>
-              <div>Box</div>
-              <div>Box</div>
-              <div>Box</div>
-            </div>
+              <div class="purchases">
+                <div class="item"><img src="/images/black.jpg" />14/02/20</div>
+                <div class="item"><img src="/images/cyberpunk.jpg" />16/06/20</div>
+                <div class="item"><img src="/images/pinpong.jpg" />05/01/21</div>
+                <div class="item"><img src="/images/furious.jpg" />19/06/21</div>
+              </section>
+              </div>
 
-            <div class="sold">
-              <h2>Selling history</h2>
-              <div>Box</div>
-              <div>Box</div>
-              <div>Box</div>
-              <div>Box</div>
+              <section class="section-sold">
+                <h2>Selling History</h2>
+                <div class="sold">
+                  <div class="item"><img src="/images/racing.jpg" />08/03/20</div>
+                  <div class="item"><img src="/images/furious.jpg" />09/11/20</div>
+                  <div class="item"><img src="/images/spacewars.jpg" />25/03/21</div>
+                  <div class="item">
+                    <img src="/images/superduper.jpg" />01/07/21
+                  </div>
+                </div>
+              </section>
             </div>
-
-            <div class="buy-button">Buy More</div>
-            <div class="sell-button">Sell Again</div>
+            
           </container>
         </main>
         <footer>

@@ -1,11 +1,13 @@
 /* Font */
 
-body a {
+body,
+a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: inherit;
 }
+
 body {
   background-color: #0e4873;
 }
@@ -58,7 +60,7 @@ header nav ul {
 }
 
 .hamburger,
-.search {
+.search-icon {
   width: 30px;
   margin-left: 15px;
 }
@@ -78,6 +80,44 @@ nav li {
   display: none;
 }
 
+.desktop-nav-menu-links {
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: ##a28b5e;
+}
+
+/* DROP DOWN MENU */
+.dropdown-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu-links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-menu-links li {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: ##a28b5e;
+  margin: 10px;
+  padding: 10px;
+}
+
+#hamburger-menu {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+}
+
 /* Main Page */
 
 body {
@@ -86,16 +126,30 @@ body {
   margin: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  height: 1000px;
-  gap: 20px;
+h1 {
+  text-align: center;
+  color: #0e4873;
+}
+
+.contact-form {
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  margin: 10% auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#name,
+#phone,
+#email {
+  padding: 10px;
   margin: 10px;
 }
 
-.box {
-  background-color: pink;
+#inquiry {
+  padding: 20px;
 }
 
 /* Footer */
@@ -121,7 +175,6 @@ footer .social-media li {
     justify-content: center;
     justify-content: space-between;
     width: 100%;
-    margin: ;
   }
 
   .nav-menu div {
@@ -131,19 +184,6 @@ footer .social-media li {
   .hamburger {
     display: none;
   }
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 500px;
-    gap: 40px;
-  }
 }
 @media (min-width: 500px) and (max-width: 799px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 600px;
-    gap: 40px;
-  }
 }
