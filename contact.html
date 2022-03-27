@@ -99,50 +99,55 @@
     </div>
     <div class="content-wrapper">
       <div class="content-container">
-        <main>
-          <container class="container">
-            <h1>Contact Us</h1>
-            <form action="form-success.php" method="POST">
-              <fieldset class="contact-form">
-                <legend>Contact form</legend>
-                <label for="name">Username</label>
+        <main class="contactContainer">
+          <form id="contactForm">
+            <div>
+              <label>
+                <p>Username(required)</p>
+                <input name="username" id="username" placeholder="Username" />
+              </label>
+              <div class="form-error" id="usernameError">
+                Username too short (minimum 2 characters)
+              </div>
+            </div>
+            <div>
+              <label>
+                <p>Phone (minimum 8 characters)</p>
                 <input
-                  type="text"
-                  name="Name"
-                  id="name"
-                  placeholder="Your username..."
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Phone Number"
                 />
-                <label for="phone">Phone</label>
+              </label>
+              <div class="form-error" id="phoneNumberError">
+                Not a valid phone number
+              </div>
+            </div>
+            <div>
+              <label>
+                <p>E-mail (required)</p>
+                <input name="email" id="email" placeholder="E-mail" />
+              </label>
+              <div class="form-error" id="emailError">
+                Please enter a valid email address
+              </div>
+            </div>
+            <div>
+              <label>
+                <p>Inquiry (minimum 5 characters)</p>
                 <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Your phone number..."
-                />
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email..."
-                />
-                <label for="Inquiry">Inquiry</label>
-                <textarea
-                  type="text"
                   name="inquiry"
                   id="inquiry"
-                  placeholder="Start writing your message to us here. And we will reply shortly"
-                >
-                </textarea>
-
-                <input
-                  class="contact-us-button"
-                  type="submit"
-                  value="Contact us"
+                  placeholder="How can we help you?"
                 />
-              </fieldset>
-            </form>
-          </container>
+              </label>
+              <div class="form-error" id="inquiryError">
+                Your inquiry must be longer than 5 characters
+              </div>
+            </div>
+            <button>Submit</button>
+            <div class="message"></div>
+          </form>
         </main>
         <footer>
           <ul class="social-media">
@@ -157,5 +162,6 @@
         </footer>
       </div>
     </div>
+    <script src="/js/contact.js"></script>
   </body>
 </html>
