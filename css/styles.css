@@ -85,7 +85,7 @@ nav li {
 .desktop-nav-menu-links {
   border: 2px solid #000;
   border-radius: 5px;
-  background-color: ##a28b5e;
+  background-color: #a28b5e;
 }
 
 /* DROP DOWN MENU */
@@ -106,7 +106,7 @@ nav li {
 .dropdown-menu-links li {
   border: 1px solid #000;
   border-radius: 5px;
-  background-color: ##a28b5e;
+  background-color: #a28b5e;
   margin: 10px;
   padding: 10px;
 }
@@ -192,7 +192,7 @@ footer .social-media li {
     justify-content: center;
     justify-content: space-between;
     width: 100%;
-    margin: ;
+  
   }
 
   .nav-menu div {
